@@ -1,0 +1,322 @@
+body {
+    padding: 10px;
+    background-image: url("imagens/fundo-maison.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Lora", Georgia, serif;
+    color: #38271F;
+}
+header {
+    margin: 20px;
+    padding: 25px;
+    background-color: #F4EBDD;
+    font-family: "Lora", Georgia, serif;
+    border-bottom: 2px solid #B49A69;
+}
+nav {
+    padding: 10px;
+    background-color: #761E21;
+    font-family: "Lora", Georgia, serif;
+    font-size: 1.1em;
+}
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 16px 0;   /* mesmo espaço em cima e em baixo do menu */
+    padding: 0;       /* tira o recuo à esquerda que o browser/Bootstrap põe nas listas */
+}
+nav li {
+    display: inline;
+    margin: 15px;
+}
+nav a {
+    color: #F4EBDD;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav li + li::before {         /* ornamento antes de cada link do menu, exceto o primeiro */
+    content: "❖";
+    content: "❖" / "";        /* texto alternativo vazio: os leitores de ecrã não leem o ornamento */
+    color: #B49A69;           /* dourado antigo da marca */
+    margin-right: 30px;
+}
+h1 {
+    color: #54252D;
+    text-align: center;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 56px;
+    font-weight: 500;
+    margin: 0.5em 0;   /* espaço em cima e em baixo do título */
+}
+h2 {
+    color: #54252D;
+    text-align: center;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 42px;
+    font-weight: 500;
+    margin: 0.5em 0;
+}
+h3 {
+    color: #54252D;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin:0.5em 0;
+}
+p {
+    color: #38271F;
+    font-size: 17px;
+    margin: 8px;
+    line-height: 1.6; /* aumenta o espaço entre as linhas e torna a leitura mais confortável.*/
+    text-align: center;
+}
+a{
+    font-weight: bold;
+    color: #54252D;
+    text-decoration: none;
+}
+section{
+    border-color: #B49A69;
+    border-width: 2px;
+    border-style: solid;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;      /* centra os botões dentro das secções */
+}
+footer{
+    text-align:center;
+    padding: 20px;
+    background-color: #761E21;
+    color:#F4EBDD;
+}
+footer p {
+    color: #F4EBDD;
+}
+.subtitulo {                  /* pequeno texto por cima dos títulos */
+    color: #54252D;
+    font-size: 16px;
+    font-weight:700;
+    letter-spacing: 2px;      /* espaço entre as letras: dá um ar mais elegante */
+    text-align: left;        /* o subtítulo é a exceção: fica à esquerda */
+}
+.botao {                          /* links com aspeto de botão */
+    display: inline-block;        /* permite dar padding e margem a um link */
+    margin-top: 15px;
+    padding: 8px 22px;
+    background-color: #761E21;
+    color: #F4EBDD;
+    border: 1px solid #761E21;
+    font-size: 12px;
+    text-transform: uppercase;    /* põe o texto em maiúsculas */
+    letter-spacing: 1.5px;
+    transition: background-color 0.3s, color 0.3s;   /* animação discreta: a cor muda suavemente no hover */
+}
+.botao:hover {                    /* quando o rato passa por cima */
+    background-color: transparent;
+    color: #761E21;
+}
+.hero {
+    background-image: linear-gradient(rgba(56, 39, 31, 0.5), rgba(56, 39, 31, 0.5)),
+                      url("imagens/hero-inicio.jpg");
+    background-size: cover;
+    background-position: center;      
+    padding: 120px 20px;
+}
+.hero-conteudo {                                
+    max-width: 750px;
+    margin: 0 auto;                              
+}
+.hero h1,
+.hero p,
+.hero .subtitulo {                               
+    color: #F4EBDD;
+    text-wrap: balance;
+}
+.hero .subtitulo {
+    text-align: center;                         
+}
+.hero .botao {                                  
+    background-color: #F4EBDD;
+    color:#761E21;
+    border-color: #F4EBDD;
+}
+.hero .botao:hover {
+    background-color: transparent;
+    color: #F4EBDD;
+}
+.hero-interior {                  
+    background-image: none;      
+    background-color: #761E21;   
+    padding: 60px 20px;           
+}
+.hero-criacoes {                  
+    background-image: linear-gradient(rgba(56, 39, 31, 0.5), rgba(56, 39, 31, 0.5)),
+                      url("imagens/hero-criacoes.jpg");
+}
+.hero-momentos {                 
+    background-image: linear-gradient(rgba(56, 39, 31, 0.5), rgba(56, 39, 31, 0.5)),
+                      url("imagens/hero-momentos.jpg");
+}
+.hero-encomendas {               
+    background-image: linear-gradient(rgba(56, 39, 31, 0.5), rgba(56, 39, 31, 0.5)),
+                      url("imagens/hero-encomendas.jpg");
+}
+.hero-confirmacao {              
+    background-image: linear-gradient(rgba(56, 39, 31, 0.5), rgba(56, 39, 31, 0.5)),
+                      url("imagens/hero-confirmacao.jpg");
+}
+.foco-baixo {                    
+    object-position: center 75%;
+}
+.foco-cima {                     
+    object-position: center 15%;
+}
+.logo {
+    display: block;
+    color: #54252D;
+    text-decoration: none;
+    text-align: center;
+}
+.logo-imagem {
+    display: block;
+    width: 320px;
+    height: auto;
+    margin: 0px auto 25px;
+}
+.cartao {
+    padding: 15px;
+    border: 1px solid #B49A69;
+    text-align: center;
+}
+.imagem-produto {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+.imagem-quadrada {                /* imagens quadradas (cartões do Momentos) */
+    aspect-ratio: 1 / 1;          /* largura igual à altura */
+}
+.destaques .imagem-produto {      
+    height: 450px;                
+    object-position: center 15%;  
+}
+.destaques h3 {                  
+    margin: 12px 0 4px;           
+}
+#form-encomenda {       /* Formulário de encomendas */
+    max-width: 700px;
+    margin: 30px auto;
+}
+.campo-formulario {
+    position: relative;                 /* position: relative e position: absolute permitem posicionar os rótulos dentro dos campos. */
+    margin-bottom: 25px;
+}
+.campo-formulario input,
+.campo-formulario select,
+.campo-formulario textarea {
+    width: 100%;
+    padding: 18px 12px;
+    border: 1px solid #B49A69;
+    background-color: #F4EBDD;
+    color: #38271F;
+    font-family: "Lora", Georgia, serif;
+    font-size: 16px;
+}
+.campo-formulario label {
+    position: absolute;                         /* position: relative e position: absolute permitem posicionar os rótulos dentro dos campos. */
+    left: 12px;
+    top: 16px;
+    color: #54252D;
+    pointer-events: none;
+}
+.campo-formulario input:focus + label,                /* O rótulo sobe quando o campo é preenchido */  /* :focus aplica um destaque quando o utilizador seleciona um campo. */
+.campo-formulario input:not(:placeholder-shown) + label,
+.campo-formulario textarea:focus + label,
+.campo-formulario textarea:not(:placeholder-shown) + label,
+.campo-formulario select:focus + label,
+.campo-formulario select:valid + label {
+    top: -10px;
+    left: 8px;
+    background-color: #F4EBDD;
+    padding: 2px 5px;
+    font-size: 12px;
+}
+.campo-formulario input:focus,
+.campo-formulario select:focus,
+.campo-formulario textarea:focus {
+    outline: 2px solid #54252D;
+}
+#form-encomenda button {
+    padding: 14px 25px;
+    border: none;
+    background-color: #761E21;
+    color: #F4EBDD;
+    font-family: "Lora", Georgia, serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+@media (max-width: 600px) {          /* Telemóvel: ecrãs até 600px de largura */
+    body {
+        padding: 5px;
+    }
+    header, section {
+        margin: 10px 0px;
+        padding: 12px;
+    }
+    .logo-imagem {
+        width: 220px;
+    }
+    nav {
+        padding: 10px 5px;
+    }
+    nav ul {                         /* links do menu lado a lado, passam para baixo se não couberem */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin: 0px;
+    }
+    nav li {
+        margin: 0px;
+    }
+    nav a {
+        font-size: 13px;
+    }
+    nav li + li::before {
+        display: none;               /* no telemóvel não mostra os ornamentos do menu */
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 23px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .cartao {
+        padding: 12px;
+    }
+    .imagem-produto {
+        height: auto;                
+    }
+    .destaques .imagem-produto {
+        height: auto;
+    }
+    #form-encomenda {
+        margin: 20px auto;
+    }
+    footer {
+        padding: 15px 10px;
+    }
+    .hero {
+        padding: 60px 10px;          /* abertura mais baixa no telemóvel */
+    }
+
+}
+
